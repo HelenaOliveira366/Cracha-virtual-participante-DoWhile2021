@@ -1,0 +1,107 @@
+/*Seletor universal*/
+*{
+    margin: 0;
+    /*Fonte do projeto*/
+    font-family: 'Playfair Display', sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+    /*Declaração de variáveis*/
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+}
+
+html, body{
+    height: 100%;
+}
+
+/*Centralização do elemetos do corpo*/
+body{
+	display: grid;		
+    place-items: center;
+}
+
+/*Estilização do tamanho e imagem de fundo do crachá para dispositivos mobiles*/
+main{
+    /*A imagem de fundo não vai se repetir, vai sempre ocupar o centro do dispositivo e vai cobrir todo o espaço do fundo*/
+    background: url(/images/background.svg) no-repeat center/cover;
+    /*A largura do main vai preencher o total da tela do dispositivo - o vw é viewport*/
+    width: 100vw;
+    /*Altura miníma*/
+    min-height: 812px;
+    /*A altura geral da página vai ocupar toda a tela do dispositivo*/
+    height: 100vh;
+}
+
+/*Delimitação do tamanho da caixa que contém informações do participante*/
+.container{
+    max-width:250px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    color: var(--white);
+}
+
+/*Estilização do selo da Rocketseat*/
+.avatar span{
+    /*Posicionamento do selo para cima da imagem*/
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+}
+
+/*Estilização da foto do participante*/
+.avatar{
+    width: 10rem;
+    margin: 12rem auto 0;
+
+    /*Referência o limite que o selo pode subir*/
+    position: relative;
+}
+
+/*Estilização da foto do participante*/
+#userImage{
+    width: 10rem;
+    height: 12rem;
+    /*Foto vai obedecer à altura e largura definida*/
+    object-fit: cover;
+    /*Moldar a imagem em forma de polígono - feito em https://bennettfeely.com/clippy/ */
+    /*O clip-path vai fazer a imagem ficar acima do selo, então para fazê-lo voltar para cima usamos o z-index: 1*/
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+
+}
+
+h1{
+    margin-top: 1.5rem;
+}
+
+/*Cor da fonte do nome de usuáriodo participante*/
+#userLink{
+    color: var(--white);
+}
+
+p{
+    margin-top: 2rem;
+
+}
+
+a{
+    color: var(--black);
+    text-decoration: none;
+    margin-top: 0.25rem;
+
+    /*Alinhamento e espaçamento do ícone do github com o nome de usuário do participante*/
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+ul{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    list-style: none;
+    padding: 0;
+    /*Alinhar e centralizar os elementos no eixo x*/
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}

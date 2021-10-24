@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	<head>
+		<!--Tag para ajuste da página de acordo com o tamanho da tela do dispositivo-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8"/>
+		<!--Importação do CSS-->
+		<link rel="stylesheet" href="style.css"/>
+
+		<!--Importação das fontes do projeto-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+		<!--Título da página-->
+		<title>Crachá Virtual DoWhile 2021 - Helena Oliveira</title>
+	</head>
+
+	<body>
+		<!--Caixa que vai conter o conteúdo principal da página-->
+		<main>
+			<div class="container">
+				<!--Caixa que vai conter as imagens do crachá-->
+				<div class="avatar">
+					<span>
+						<!--Selo da Rocketseat-->
+						<img src="/images/build.svg" alt="Selo da Rocketseat">
+					</span>
+					<!--Mais tarde, com o Javascript, o atributo src irá receber a imagem do perfil do github do participante por isso está vazio-->
+					<img src="" alt="Foto de perfil do GitHub do participante" id="userImage">
+				</div>
+
+				<!--Nome do participante e perfil do github. Mais tarde, com o Javascript, esse texto será substituído pelo nome do participante-->
+				<h1 id="userName">Nome do Participante</h1>
+
+				<a href="" target="_blank" id="userLink"> 
+					<img src="/images/github.svg" alt="Logo do GitHub">
+					<!--O span é necessário para mais tarde no JS quando for atribuido o nome de usário do participante o ícone do GitHub não sumir, caso esta tag fosse pai da tag img, o logo sumiria do mesmo jeito-->
+					<span id="userLogin">
+						<!--Mais tarde, com o Javascript, esse texto será substituído pelo nome de usuário do participante-->
+						Nome de Usuário do Participante
+					</span>
+				</a>
+
+				<!--Breve descrição do participante. Mais tarde, com o Javascript, esse texto será substituído pela biografia do perfil do github do participante-->
+				<p id="userBio">Biografia do Participante</p>
+
+				<!--Lista contendo as redes sociais do participante-->
+				<ul id="socialLinks">
+					<li class="youtube">
+						<a href="https://www.youtube.com/" target="_blank">
+							<img src="/images/youtube.svg" alt="Logo do YouTube">
+						</a>
+					</li>
+
+					<li class="instagram">
+						<a href="https://instagram.com" target="_blank">
+							<img src="/images/instagram.svg" alt="Logo do Instagram">
+						</a>
+					</li>
+
+					<li class="facebook">
+						<a href="https://facebook.com" target="_blank">
+							<img src="/images/facebook.svg" alt="Logo do Facebook">
+						</a>
+					</li>
+
+					<li class="twitter">
+						<a href="https://twitter.com" target="_blank">
+							<img src="/images/twitter.svg" alt="Logo do Twitter">
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!--Importação do arquivo contendo o JS do projeto-->
+			<script src="main.js"></script>
+
+		</main>
+	</body>
+</html>
