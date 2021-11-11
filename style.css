@@ -23,7 +23,7 @@ body{
 /*Estilização do tamanho e imagem de fundo do crachá para dispositivos mobiles*/
 main{
     /*A imagem de fundo não vai se repetir, vai sempre ocupar o centro do dispositivo e vai cobrir todo o espaço do fundo*/
-    background: url(/images/background.svg) no-repeat center/cover;
+    background: url(images/background.svg) no-repeat center/cover;
     /*A largura do main vai preencher o total da tela do dispositivo - o vw é viewport*/
     width: 100vw;
     /*Altura miníma*/
