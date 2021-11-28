@@ -30,15 +30,25 @@ main{
     min-height: 812px;
     /*A altura geral da página vai ocupar toda a tela do dispositivo*/
     height: 100vh;
+
+    /*Esta linha vai servir para centralizar o conteúdo da div "container" dentro do main*/
+    position: relative;
 }
 
 /*Delimitação do tamanho da caixa que contém informações do participante*/
 .container{
     max-width:250px;
-    margin-left: 1rem;
-    margin-right: 1rem;
     text-align: center;
     color: var(--white);
+
+    /*CENTRALIZAÇÃO*/
+    position: absolute;
+    /*Posicionamento do conteúdo no eixo Y*/
+    top: 50%;
+    /*Posicionamento do conteúdo no eixo X*/
+    left: 50%;
+    /*Centralização do counteúdo do crachá no eixo X e Y conforme o tamanho da caixa pai, o "main", sem estrapolá-la*/
+    transform: translate(-50%, -75%);
 }
 
 /*Estilização do selo da Rocketseat*/
